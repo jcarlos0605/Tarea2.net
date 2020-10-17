@@ -4,12 +4,18 @@ using Abp.DynamicEntityProperties;
 using Abp.Zero.EntityFramework;
 using tarea2.Authorization.Roles;
 using tarea2.Authorization.Users;
+using tarea2.Features.clientes;
+using tarea2.Features.Productos;
 using tarea2.MultiTenancy;
 
 namespace tarea2.EntityFramework
 {
     public class tarea2DbContext : AbpZeroDbContext<Tenant, Role, User>
     {
+       DbSet<Productos>Producto { get; set; }
+
+        DbSet<Cliente> clientes { get; set; }
+
         //TODO: Define an IDbSet for your Entities...
 
         /* NOTE: 

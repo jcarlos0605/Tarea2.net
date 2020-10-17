@@ -226,8 +226,22 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityFramework\clientes.cs" />
+    <Compile Include="EntityFramework\Producto.cs" />
     <Compile Include="EntityFramework\tarea2DbContext.cs" />
     <Compile Include="EntityFramework\Repositories\tarea2RepositoryBase.cs" />
+    <Compile Include="Migrations\202010170132127_agregar_tabla_Productos.cs" />
+    <Compile Include="Migrations\202010170132127_agregar_tabla_Productos.designer.cs">
+      <DependentUpon>202010170132127_agregar_tabla_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010170153220_agregar_tabla_clientes.cs" />
+    <Compile Include="Migrations\202010170153220_agregar_tabla_clientes.designer.cs">
+      <DependentUpon>202010170153220_agregar_tabla_clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010170159396_agregar_tabla_Cliente.cs" />
+    <Compile Include="Migrations\202010170159396_agregar_tabla_Cliente.designer.cs">
+      <DependentUpon>202010170159396_agregar_tabla_Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="tarea2DataModule.cs" />
     <Compile Include="Migrations\201809270654064_InitialMigrations.cs" />
     <Compile Include="Migrations\201809270654064_InitialMigrations.Designer.cs">
@@ -334,6 +348,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009281416152_Upgraded_To_ABP_5_13_0.resx">
       <DependentUpon>202009281416152_Upgraded_To_ABP_5_13_0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010170132127_agregar_tabla_Productos.resx">
+      <DependentUpon>202010170132127_agregar_tabla_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010170153220_agregar_tabla_clientes.resx">
+      <DependentUpon>202010170153220_agregar_tabla_clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010170159396_agregar_tabla_Cliente.resx">
+      <DependentUpon>202010170159396_agregar_tabla_Cliente.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
