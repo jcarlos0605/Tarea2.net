@@ -207,6 +207,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\clientes\Cliente.cs" />
+    <Compile Include="Features\Productos\Producto.cs" />
     <Compile Include="tarea2Consts.cs" />
     <Compile Include="tarea2CoreModule.cs" />
     <Compile Include="AppVersionHelper.cs" />
@@ -265,6 +267,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Localization\Source\tarea2-vi.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
